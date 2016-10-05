@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html>
+    <!--
+  * Please see the included README.md file for license terms and conditions.
+  -->
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="icon-fonts/elusive-icons-2.0.0/css/elusive-icons.css">
+        <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" class="uib-framework-theme">
+        <meta charset="UTF-8">
+        <title>Blank App Designer Cordova Web App Project Template</title>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+
+        <!--
+  * The "meta viewport" tag (below) helps your app size appropriately to a device's ideal viewport.
+  * Note that Windows device viewports work better when initialized using the @viewport CSS rule.
+  * For a quick overview of "meta viewport" and @viewport, see this article:
+  *   http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/quick-tip-dont-forget-the-viewport-meta-tag
+  * To see how it works, try your app on a real device with and without a "meta viewport" tag.
+  * Additional useful references include:
+  *   http://www.quirksmode.org/mobile/viewports.html
+  *   http://www.quirksmode.org/mobile/metaviewport/devices.html
+  *   https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html
+-->
+
+        <!-- <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1"> -->
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, minimum-scale=1, maximum-scale=2"> -->
+
+        <style>
+            /* following three (cascaded) are equivalent to above three meta viewport statements */
+            /* see http://www.quirksmode.org/blog/archives/2014/05/html5_dev_conf.html */
+            /* see http://dev.w3.org/csswg/css-device-adapt/ */
+                @-ms-viewport { width: 100vw ; min-zoom: 100% ; zoom: 100% ; }          @viewport { width: 100vw ; min-zoom: 100% zoom: 100% ; }
+                @-ms-viewport { user-zoom: fixed ; min-zoom: 100% ; }                   @viewport { user-zoom: fixed ; min-zoom: 100% ; }
+                /*@-ms-viewport { user-zoom: zoom ; min-zoom: 100% ; max-zoom: 200% ; }   @viewport { user-zoom: zoom ; min-zoom: 100% ; max-zoom: 200% ; }*/
+        </style>
+
+        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" type="text/css" href="css/index_main.less.css" class="main-less">
+
+        <!-- IMPORTANT: Do not include a weinre script tag as part of your release builds! -->
+        <!-- Place your remote debugging (weinre) script URL from the Test tab here, if it does not work below -->
+        <!-- <script src="http://debug-software.intel.com/target/target-script-min.js#insertabiglongfunkynumberfromthexdkstesttab"></script> -->
+
+        <!-- Recommended location for your JavaScript libraries -->
+        <!-- These library references (below) are just examples to give you the general idea... -->
+        <!-- <script src="lib/mc/hammer.js"></script> -->
+        <!-- <script src="lib/ft/fastclick.js"></script> -->
+
+        <!--
+  * cordova.js is a phantom lib for "Cordova HTML5 web app," it does nothing in a "Standard HTML5 web app"
+  * Seeing a "Failed to load resource: net::ERR_FILE_NOT_FOUND" message caused by this "cordova.js" script?
+  * The cordova.js script is required if you convert your "Standard HTML5" project into a "Cordova" project.
+  * You can safely ignore the error or comment out this line if you will not be developing a Cordova app.
+-->
+        <script src="cordova.js" id="xdkJScordova_"></script>
+
+        <script src="js/app.js"></script>
+        <!-- for your event code, see README and file comments for details -->
+        <script src="js/init-app.js"></script>
+        <!-- for your init code, see README and file comments for details -->
+        <script src="xdk/init-dev.js"></script>
+        <!-- normalizes device and document ready events, see file for details -->
+        <script type="application/javascript" src="lib/jquery.min.js"></script>
+        <script type="application/javascript" src="marginal/marginal-position.min.js"></script>
+        <script type="application/javascript" src="js/index_user_scripts.js"></script>
+        <script type="application/javascript" src="xdk/ad/bs_subpage.js"></script>
+        <script type="application/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+        <script type="application/javascript" src="sidebar/js/hammer.js"></script>
+        <script type="application/javascript" src="sidebar/js/jquery.hammer.js"></script>
+        <script type="application/javascript" src="sidebar/js/swipe-hammer.js"></script>
+        <script type="application/javascript" src="sidebar/js/sidebar.js"></script>
+        <script type="application/javascript" src="xdk/appdesigner/js/rest-of-space.js"></script>
+    </head>
+
+    <body>
+        <!-- IMPORTANT: Do not include a weinre script tag as part of your release builds! -->
+        <!-- Place your remote debugging (weinre) script URL from the Test tab here, if it does not work above -->
+        <!-- <script src="http://debug-software.intel.com/target/target-script-min.js#insertabiglongfunkynumberfromthexdkstesttab"></script> -->
+        <div class="upage" id="mainpage">
+
+            <div class="upage-outer">
+                <div class="upage-content ac0 content-area vertical-col" id="page_73_91">
+                    <div class="tarea widget uib_w_21 t titulohome tt" data-uib="media/text" data-ver="0" name="uib_w_21">
+                        <div class="widget-container left-receptacle"></div>
+                        <div class="widget-container right-receptacle"></div>
+                        <div class="text-container">
+                            <h1><strong>PRANCHETA APP</strong></h1>
+                        </div>
+                    </div>
+                    <div class="widget uib_w_3 scale-image marginicial" data-uib="media/img" data-ver="0">
+                        <figure class="figure-align">
+                            <img src="images/Imagem1.png" id="img-inicial">
+
+                            <figcaption data-position="bottom"></figcaption>
+                        </figure>
+                    </div>
+
+                </div>
+                <div class="uib-footer uib-footer-fixed footer-bg container-group inner-element uib_w_26" data-uib="layout/footer" data-ver="0">
+                    <h2></h2>
+                    <div class="widget-container wrapping-col single-centered">
+                        <div class="btn-group uib-bs-flex widget uib_w_27 d-margins" data-uib="twitter%20bootstrap/button_group" data-ver="1">
+                            <button class="btn widget uib_w_28 btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn-carregando">Carregando...</button>
+                        </div>
+                    </div>
+                    <div class="widget-container content-area horiz-area wrapping-col left"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col right"></div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="upage hidden background" id="home">
+
+            <div class="upage-outer">
+                <div class="uib-header header-bg container-group inner-element uib_w_40 h shadow" data-uib="layout/header" data-ver="0">
+                    <h2>HOME</h2>
+                    <div class="widget-container wrapping-col single-centered"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col left"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col right">
+                        <button class="btn widget uib_w_58 d-margins btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn-sair-home"><i class="glyphicon glyphicon-remove" data-position="icon only"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="upage-content ac0 content-area vertical-col" id="page_69_58">
+
+                    <div class="tarea widget uib_w_37 d-margins" data-uib="media/text" data-ver="0" name="uib_w_37">
+                        <div class="widget-container left-receptacle"></div>
+                        <div class="widget-container right-receptacle"></div>
+                        <div class="text-container"></div>
+                    </div>
+                    <button class="btn widget uib_w_2 d-margins tambtnprancheta txtbtnprancheta btn-prancheta marginhome btn-lg btn-success" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn-prancheta">Prancheta</button>
+                    <button class="btn widget uib_w_2 style-btns btn-lg btn-success tambtnprancheta txtbtnprancheta" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn-sist">Sistemas Táticos</button>
+                </div>
+
+            </div>
+            <div class="modal outer-element uib_w_41 ppp" data-uib="twitter%20bootstrap/modal" data-ver="1" data-backdrop="false" data-keyboard="true" id="pop-up-sair">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button class="close" data-dismiss="modal">x</button>
+                            <h4 class="modal-title">Deseja sair da aplicação?</h4>
+                        </div>
+
+                        <div class="modal-body">
+
+                            <div class="btn-group uib-bs-flex widget uib_w_42" data-uib="twitter%20bootstrap/button_group" data-ver="1">
+                                <button class="btn widget uib_w_43 marginbotao btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn-sair-sim3">SIM</button>
+                                <button class="btn widget uib_w_45 btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn-sair-nao3">NÃO</button>
+                            </div>
+
+                            <div class="col uib_col_1 single-col nn ppp" data-uib="layout/col" data-ver="0">
+                                <div class="widget-container content-area vertical-col center">
+
+                                    <span class="uib_shim"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal-footer"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="upage vertical-col left hidden background" id="menu-sis-5x1">
+            <div class="upage-outer">
+                <div class="uib-header header-bg container-group inner-element uib_w_40 h shadow" data-uib="layout/header" data-ver="0">
+                    <h2>SISTEMA 5X1</h2>
+                    <div class="widget-container wrapping-col single-centered"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col left">
+                        <button class="btn widget uib_w_58 d-margins btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="menusb1"><i class="el el-align-justify" data-position="icon only"></i>
+                        </button>
+                    </div>
+                    <div class="widget-container content-area horiz-area wrapping-col right">
+                        <button class="btn widget uib_w_58 d-margins btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn-sair-5x1"><i class="glyphicon glyphicon-remove" data-position="icon only"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="upage-content ac0 content-area vertical-col left" id="sis-5x1-passe">
+
+                </div>
+                <div class="uib-footer uib-footer-fixed footer-bg container-group inner-element uib_w_12" data-uib="layout/footer" data-ver="0">
+                    <h2></h2>
+                    <div class="widget-container wrapping-col single-centered">
+                        <div class="btn-group uib-bs-flex widget uib_w_46 d-margins" data-uib="twitter%20bootstrap/button_group" data-ver="1">
+
+                            <button class="btn widget uib_w_48 btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn-home-menusis5x1"><i class="glyphicon glyphicon-home" data-position="icon only"></i>
+                            </button>
+                            <button class="btn widget uib_w_49 btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn-voltar-menusis5x1"><i class="el el-return-key" data-position="icon only"></i>
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="widget-container content-area horiz-area wrapping-col left"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col right"></div>
+                </div>
+
+                <div class="inner-element uib_w_50 uib_sidebar leftbar bar-bg thumb-bg bar-gutter" data-uib="layout/left_sidebar" data-ver="1" data-anim="{'style':'overlap', 'v':200, 'side':'left', 'dur':200}" id="sd1">
+                    <div class="sidebar-content content-area vertical-col">
+                        <button class="widget uib_w_59 btn btn-sm btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="bt-5x1-recolhersd1"><i class="glyphicon glyphicon-arrow-left" data-position="icon only"></i>
+                        </button>
+
+                        <div class="panel-group no_wrap widget uib_w_51 acordeon" data-uib="twitter%20bootstrap/accordion" data-ver="1" id="bs-accordion-1">
+                            <div class="panel widget uib_w_52 acord panel-success" data-uib="twitter%20bootstrap/collapsible" data-ver="1">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+           <a class="accordion-toggle" data-toggle="collapse" href="#bs-accordion-group-3" data-parent="#bs-accordion-1">PASSE</a>
+       </h4>
+                                </div>
+                                <div id="bs-accordion-group-3" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <div class="col uib_col_5 single-col" data-uib="layout/col" data-ver="0">
+                                            <div class="widget-container content-area vertical-col center">
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="bt-5x1-passe-rd3">Rede de 3</button>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="bt-5x1-passe-rd2">Rede de 2</button>
+                                                <span class="uib_shim"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel widget uib_w_53 panel-success" data-uib="twitter%20bootstrap/collapsible" data-ver="1">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+           <a class="accordion-toggle" data-toggle="collapse" href="#bs-accordion-group-4" data-parent="#bs-accordion-1">SAQUE</a>
+       </h4>
+                                </div>
+                                <div id="bs-accordion-group-4" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <div class="col uib_col_6 single-col" data-uib="layout/col" data-ver="0">
+                                            <div class="widget-container content-area vertical-col">
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="bt-5x1-saque-levantador">Levantador</button>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="bt-5x1-saque-m2">Meio2</button>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="bt-5x1-saque-p3">Ponta3</button>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="bt-5x1-saque-op">Oposto</button>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="bt-5x1-saque-m3">Meio3</button>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="bt-5x1-saque-p2">Ponta2</button>
+                                                <span class="uib_shim"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel widget uib_w_54 panel-success" data-uib="twitter%20bootstrap/collapsible" data-ver="1">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+           <a class="accordion-toggle" data-toggle="collapse" href="#bs-accordion-group-5" data-parent="#bs-accordion-1">DEFESA</a>
+       </h4>
+                                </div>
+                                <div id="bs-accordion-group-5" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <div class="col uib_col_7 single-col" data-uib="layout/col" data-ver="0">
+                                            <div class="widget-container content-area vertical-col">
+                                                <h3>Ataque: </h3>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="bt-5x1-defesa-in">Entrada</button>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="bt-5x1-defesa-out">Saída</button>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="bt-5x1-defesa-outB">Saída-Fundo</button>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="bt-5x1-defesa-meio">Meio</button>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="bt-5x1-defesa-meioC">Chutada-Meio</button>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="bt-5x1-defesa-meioF">Meio-Fundo</button>
+                                                <span class="uib_shim"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel widget uib_w_54 panel-success" data-uib="twitter%20bootstrap/collapsible" data-ver="1">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+           <a class="accordion-toggle" data-toggle="collapse" href="#bs-accordion-group-6" data-parent="#bs-accordion-1">COBERTURA</a>
+       </h4>
+                                </div>
+                                <div id="bs-accordion-group-6" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <div class="col uib_col_7 single-col" data-uib="layout/col" data-ver="0">
+                                            <div class="widget-container content-area vertical-col">
+                                                <h3>Ataque: </h3>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="bt-5x1-cobertura-in">Entrada</button>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="bt-5x1-cobertura-out">Saída</button>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="bt-5x1-cobertura-outB">Saída-Fundo</button>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="bt-5x1-cobertura-meio">Meio</button>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="bt-5x1-cobertura-meioC">Chutada-Meio</button>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="bt-5x1-cobertura-meioF">Meio-Fundo</button>
+                                                <span class="uib_shim"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal outer-element uib_w_41 ppp" data-uib="twitter%20bootstrap/modal" data-ver="1" data-backdrop="false" data-keyboard="true" id="pop-up-sair1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button class="close" data-dismiss="modal">x</button>
+                            <h4 class="modal-title">Deseja sair da aplicação?</h4>
+                        </div>
+
+                        <div class="modal-body">
+
+                            <div class="btn-group uib-bs-flex widget uib_w_42" data-uib="twitter%20bootstrap/button_group" data-ver="1">
+                                <button class="btn widget uib_w_43 marginbotao btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn-sair-sim1">SIM</button>
+                                <button class="btn widget uib_w_45 btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn-sair-nao1">NÃO</button>
+                            </div>
+
+                            <div class="col uib_col_1 single-col nn ppp" data-uib="layout/col" data-ver="0">
+                                <div class="widget-container content-area vertical-col center">
+
+                                    <span class="uib_shim"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal-footer"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="upage vertical-col left hidden background" id="menu-sis-4x2i">
+            <div class="upage-outer">
+                <div class="uib-header header-bg container-group inner-element uib_w_40 h shadow" data-uib="layout/header" data-ver="0">
+                    <h2>SISTEMA 4X2 INFILTRADO</h2>
+                    <div class="widget-container wrapping-col single-centered"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col left">
+                        <button class="btn widget uib_w_58 d-margins btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="menusb2"><i class="el el-align-justify" data-position="icon only"></i>
+                        </button>
+                    </div>
+                    <div class="widget-container content-area horiz-area wrapping-col right">
+                        <button class="btn widget uib_w_58 d-margins btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn-sair-4x2i"><i class="glyphicon glyphicon-remove" data-position="icon only"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="upage-content ac0 content-area vertical-col left" id="sis-4x2i-passe">
+
+                </div>
+                <div class="uib-footer uib-footer-fixed footer-bg container-group inner-element uib_w_12" data-uib="layout/footer" data-ver="0">
+                    <h2></h2>
+                    <div class="widget-container wrapping-col single-centered">
+                        <div class="btn-group uib-bs-flex widget uib_w_46 d-margins" data-uib="twitter%20bootstrap/button_group" data-ver="1">
+
+                            <button class="btn widget uib_w_48 btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn-home-4x2i"><i class="glyphicon glyphicon-home" data-position="icon only"></i>
+                            </button>
+                            <button class="btn widget uib_w_49 btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn-voltar-4x2i"><i class="el el-return-key" data-position="icon only"></i>
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="widget-container content-area horiz-area wrapping-col left"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col right"></div>
+                </div>
+
+                <div class="inner-element uib_w_50 uib_sidebar leftbar bar-bg thumb-bg bar-gutter" data-uib="layout/left_sidebar" data-ver="1" data-anim="{'style':'overlap', 'v':200, 'side':'left', 'dur':200}" id="sd2">
+                    <div class="sidebar-content content-area vertical-col">
+                        <button class="widget uib_w_59 btn btn-sm btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="bt-4x2i-recolhersd2"><i class="glyphicon glyphicon-arrow-left" data-position="icon only"></i>
+                        </button>
+
+                        <div class="panel-group no_wrap widget uib_w_51 acordeon" data-uib="twitter%20bootstrap/accordion" data-ver="1" id="bs-accordion-1">
+
+                            <div class="panel widget uib_w_52 acord panel-success" data-uib="twitter%20bootstrap/collapsible" data-ver="1">
+
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"><a class="accordion-toggle" data-toggle="collapse" href="#bs-accordion-group-3" data-parent="#bs-accordion-1">PASSE</a></h4>
+                                </div>
+
+                                <div id="bs-accordion-group-3" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <div class="col uib_col_5 single-col" data-uib="layout/col" data-ver="0">
+                                            <div class="widget-container content-area vertical-col center">
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Rede de 3</button>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Rede de 2</button>
+                                                <span class="uib_shim"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel widget uib_w_53 panel-success" data-uib="twitter%20bootstrap/collapsible" data-ver="1">
+
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"><a class="accordion-toggle" data-toggle="collapse" href="#bs-accordion-group-4" data-parent="#bs-accordion-1">SAQUE</a></h4>
+                                </div>
+
+                                <div id="bs-accordion-group-4" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <div class="col uib_col_6 single-col" data-uib="layout/col" data-ver="0">
+                                            <div class="widget-container content-area vertical-col">
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Levantador</button>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Meio2</button>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Ponta3</button>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Oposto</button>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Meio3</button>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Ponta2</button>
+                                                <span class="uib_shim"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel widget uib_w_54 panel-success" data-uib="twitter%20bootstrap/collapsible" data-ver="1">
+
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"><a class="accordion-toggle" data-toggle="collapse" href="#bs-accordion-group-5" data-parent="#bs-accordion-1">DEFESA</a></h4>
+                                </div>
+
+                                <div id="bs-accordion-group-5" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <div class="col uib_col_7 single-col" data-uib="layout/col" data-ver="0">
+                                            <div class="widget-container content-area vertical-col">
+                                                <h3>Ataque: </h3>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Entrada</button>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Saída</button>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Saída-Fundo</button>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Meio</button>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Chutada-Meio</button>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Meio-Fundo</button>
+                                                <span class="uib_shim"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel widget uib_w_54 panel-success" data-uib="twitter%20bootstrap/collapsible" data-ver="1">
+
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"><a class="accordion-toggle" data-toggle="collapse" href="#bs-accordion-group-6" data-parent="#bs-accordion-1">COBERTURA</a></h4>
+                                </div>
+
+                                <div id="bs-accordion-group-6" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <div class="col uib_col_7 single-col" data-uib="layout/col" data-ver="0">
+                                            <div class="widget-container content-area vertical-col">
+                                                <h3>Ataque: </h3>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Entrada</button>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Saída</button>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Saída-Fundo</button>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Meio</button>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Chutada-Meio</button>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Meio-Fundo</button>
+                                                <span class="uib_shim"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal outer-element uib_w_41 ppp" data-uib="twitter%20bootstrap/modal" data-ver="1" data-backdrop="false" data-keyboard="true" id="pop-up-sair4">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button class="close" data-dismiss="modal">x</button>
+                            <h4 class="modal-title">Deseja sair da aplicação?</h4>
+                        </div>
+
+                        <div class="modal-body">
+
+                            <div class="btn-group uib-bs-flex widget uib_w_42" data-uib="twitter%20bootstrap/button_group" data-ver="1">
+                                <button class="btn widget uib_w_43 marginbotao btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn-sair-sim4">SIM</button>
+                                <button class="btn widget uib_w_45 btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn-sair-nao4">NÃO</button>
+                            </div>
+
+                            <div class="col uib_col_1 single-col nn ppp" data-uib="layout/col" data-ver="0">
+                                <div class="widget-container content-area vertical-col center">
+
+                                    <span class="uib_shim"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="upage vertical-col left hidden background" id="menu-sis-4x2s">
+            <div class="upage-outer">
+
+                <div class="uib-header header-bg container-group inner-element uib_w_40 h shadow" data-uib="layout/header" data-ver="0">
+                    <h2>SISTEMA 4X2 SIMPLES</h2>
+                    <div class="widget-container wrapping-col single-centered"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col left">
+                        <button class="btn widget uib_w_58 d-margins btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="menusb3"><i class="el el-align-justify" data-position="icon only"></i>
+                        </button>
+                    </div>
+                    <div class="widget-container content-area horiz-area wrapping-col right">
+                        <button class="btn widget uib_w_58 d-margins btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn-sair-4x2s"><i class="glyphicon glyphicon-remove" data-position="icon only"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="upage-content ac0 content-area vertical-col left" id="sis-4x2s-passe">
+
+                </div>
+                <div class="uib-footer uib-footer-fixed footer-bg container-group inner-element uib_w_12" data-uib="layout/footer" data-ver="0">
+                    <h2></h2>
+                    <div class="widget-container wrapping-col single-centered">
+                        <div class="btn-group uib-bs-flex widget uib_w_46 d-margins" data-uib="twitter%20bootstrap/button_group" data-ver="1">
+
+                            <button class="btn widget uib_w_48 btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn-home-4x2s"><i class="glyphicon glyphicon-home" data-position="icon only"></i>
+                            </button>
+                            <button class="btn widget uib_w_49 btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn-voltar-4x2s"> <i class="el el-return-key"></i>
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="widget-container content-area horiz-area wrapping-col left"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col right"></div>
+                </div>
+
+                <div class="inner-element uib_w_50 uib_sidebar leftbar bar-bg thumb-bg bar-gutter" data-uib="layout/left_sidebar" data-ver="1" data-anim="{'style':'overlap', 'v':200, 'side':'left', 'dur':200}" id="sd3">
+                    <div class="sidebar-content content-area vertical-col">
+                        <button class="widget uib_w_59 btn btn-sm btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="bt-4x2s-recolhersd3"><i class="glyphicon glyphicon-arrow-left" data-position="icon only"></i>
+                        </button>
+
+                        <div class="panel-group no_wrap widget uib_w_51 acordeon" data-uib="twitter%20bootstrap/accordion" data-ver="1" id="bs-accordion-1">
+
+                            <div class="panel widget uib_w_52 acord panel-success" data-uib="twitter%20bootstrap/collapsible" data-ver="1">
+
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"><a class="accordion-toggle" data-toggle="collapse" href="#bs-accordion-group-3" data-parent="#bs-accordion-1">PASSE</a></h4>
+                                </div>
+
+                                <div id="bs-accordion-group-3" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <div class="col uib_col_5 single-col" data-uib="layout/col" data-ver="0">
+                                            <div class="widget-container content-area vertical-col center">
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Rede de 3</button>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Rede de 2</button>
+                                                <span class="uib_shim"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel widget uib_w_53 panel-success" data-uib="twitter%20bootstrap/collapsible" data-ver="1">
+
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"><a class="accordion-toggle" data-toggle="collapse" href="#bs-accordion-group-4" data-parent="#bs-accordion-1">SAQUE</a></h4>
+                                </div>
+
+                                <div id="bs-accordion-group-4" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <div class="col uib_col_6 single-col" data-uib="layout/col" data-ver="0">
+                                            <div class="widget-container content-area vertical-col">
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Levantador</button>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Meio2</button>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Ponta3</button>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Oposto</button>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Meio3</button>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Ponta2</button>
+                                                <span class="uib_shim"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel widget uib_w_54 panel-success" data-uib="twitter%20bootstrap/collapsible" data-ver="1">
+
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"><a class="accordion-toggle" data-toggle="collapse" href="#bs-accordion-group-5" data-parent="#bs-accordion-1">DEFESA</a></h4>
+                                </div>
+
+                                <div id="bs-accordion-group-5" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <div class="col uib_col_7 single-col" data-uib="layout/col" data-ver="0">
+                                            <div class="widget-container content-area vertical-col">
+                                                <h3>Ataque: </h3>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Entrada</button>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Saída</button>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Saída-Fundo</button>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Meio</button>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Chutada-Meio</button>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Meio-Fundo</button>
+                                                <span class="uib_shim"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel widget uib_w_54 panel-success" data-uib="twitter%20bootstrap/collapsible" data-ver="1">
+
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"><a class="accordion-toggle" data-toggle="collapse" href="#bs-accordion-group-6" data-parent="#bs-accordion-1">COBERTURA</a></h4>
+                                </div>
+
+                                <div id="bs-accordion-group-6" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <div class="col uib_col_7 single-col" data-uib="layout/col" data-ver="0">
+                                            <div class="widget-container content-area vertical-col">
+                                                <h3>Ataque: </h3>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Entrada</button>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Saída</button>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Saída-Fundo</button>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Meio</button>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Chutada-Meio</button>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Meio-Fundo</button>
+                                                <span class="uib_shim"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal outer-element uib_w_41 ppp" data-uib="twitter%20bootstrap/modal" data-ver="1" data-backdrop="false" data-keyboard="true" id="pop-up-sair5">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button class="close" data-dismiss="modal">x</button>
+                            <h4 class="modal-title">Deseja sair da aplicação?</h4>
+                        </div>
+
+                        <div class="modal-body">
+
+                            <div class="btn-group uib-bs-flex widget uib_w_42" data-uib="twitter%20bootstrap/button_group" data-ver="1">
+                                <button class="btn widget uib_w_43 marginbotao btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn-sair-sim5">SIM</button>
+                                <button class="btn widget uib_w_45 btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn-sair-nao5">NÃO</button>
+                            </div>
+
+                            <div class="col uib_col_1 single-col nn ppp" data-uib="layout/col" data-ver="0">
+                                <div class="widget-container content-area vertical-col center">
+
+                                    <span class="uib_shim"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal-footer"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="upage vertical-col left hidden background" id="menu-sis-3x3">
+            <div class="upage-outer">
+
+                <div class="uib-header header-bg container-group inner-element uib_w_40 h shadow" data-uib="layout/header" data-ver="0">
+                    <h2>SISTEMA 3X3</h2>
+                    <div class="widget-container wrapping-col single-centered"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col left">
+                        <button class="btn widget uib_w_58 d-margins btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="menusb4"><i class="el el-align-justify" data-position="icon only"></i>
+                        </button>
+                    </div>
+                    <div class="widget-container content-area horiz-area wrapping-col right">
+                        <button class="btn widget uib_w_58 d-margins btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn-sair-3x3"><i class="glyphicon glyphicon-remove" data-position="icon only"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="upage-content ac0 content-area vertical-col left" id="sis-3x3-passe"></div>
+
+                <div class="uib-footer uib-footer-fixed footer-bg container-group inner-element uib_w_12" data-uib="layout/footer" data-ver="0">
+                    <h2></h2>
+                    <div class="widget-container wrapping-col single-centered">
+                        <div class="btn-group uib-bs-flex widget uib_w_46 d-margins" data-uib="twitter%20bootstrap/button_group" data-ver="1">
+
+                            <button class="btn widget uib_w_48 btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn-home-3x3"><i class="glyphicon glyphicon-home" data-position="icon only"></i>
+                            </button>
+                            <button class="btn widget uib_w_49 btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn-voltar-3x3"><i class="el el-return-key" data-position="icon only"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="widget-container content-area horiz-area wrapping-col left"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col right"></div>
+                </div>
+
+                <div class="inner-element uib_w_50 uib_sidebar leftbar bar-bg thumb-bg bar-gutter" data-uib="layout/left_sidebar" data-ver="1" data-anim="{'style':'overlap', 'v':200, 'side':'left', 'dur':200}" id="sd4">
+                    <div class="sidebar-content content-area vertical-col">
+                        <button class="widget uib_w_59 btn btn-sm btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="bt-3x3-recolhersd4"><i class="glyphicon glyphicon-arrow-left" data-position="icon only"></i>
+                        </button>
+
+                        <div class="panel-group no_wrap widget uib_w_51 acordeon" data-uib="twitter%20bootstrap/accordion" data-ver="1" id="bs-accordion-1">
+
+                            <div class="panel widget uib_w_52 acord panel-success" data-uib="twitter%20bootstrap/collapsible" data-ver="1">
+
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"><a class="accordion-toggle" data-toggle="collapse" href="#bs-accordion-group-3" data-parent="#bs-accordion-1">PASSE</a></h4>
+                                </div>
+
+                                <div id="bs-accordion-group-3" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <div class="col uib_col_5 single-col" data-uib="layout/col" data-ver="0">
+                                            <div class="widget-container content-area vertical-col center">
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Rede de 3</button>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Rede de 2</button>
+                                                <span class="uib_shim"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel widget uib_w_53 panel-success" data-uib="twitter%20bootstrap/collapsible" data-ver="1">
+
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"><a class="accordion-toggle" data-toggle="collapse" href="#bs-accordion-group-4" data-parent="#bs-accordion-1">SAQUE</a></h4>
+                                </div>
+
+                                <div id="bs-accordion-group-4" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <div class="col uib_col_6 single-col" data-uib="layout/col" data-ver="0">
+                                            <div class="widget-container content-area vertical-col">
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Levantador</button>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Meio2</button>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Ponta3</button>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Oposto</button>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Meio3</button>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Ponta2</button>
+                                                <span class="uib_shim"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel widget uib_w_54 panel-success" data-uib="twitter%20bootstrap/collapsible" data-ver="1">
+
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"><a class="accordion-toggle" data-toggle="collapse" href="#bs-accordion-group-5" data-parent="#bs-accordion-1">DEFESA</a></h4>
+                                </div>
+
+                                <div id="bs-accordion-group-5" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <div class="col uib_col_7 single-col" data-uib="layout/col" data-ver="0">
+                                            <div class="widget-container content-area vertical-col">
+                                                <h3>Ataque: </h3>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Entrada</button>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Saída</button>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Saída-Fundo</button>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Meio</button>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Chutada-Meio</button>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Meio-Fundo</button>
+                                                <span class="uib_shim"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel widget uib_w_54 panel-success" data-uib="twitter%20bootstrap/collapsible" data-ver="1">
+
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"><a class="accordion-toggle" data-toggle="collapse" href="#bs-accordion-group-6" data-parent="#bs-accordion-1">COBERTURA</a></h4>
+                                </div>
+
+                                <div id="bs-accordion-group-6" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <div class="col uib_col_7 single-col" data-uib="layout/col" data-ver="0">
+                                            <div class="widget-container content-area vertical-col">
+                                                <h3>Ataque: </h3>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Entrada</button>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Saída</button>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Saída-Fundo</button>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Meio</button>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Chutada-Meio</button>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Meio-Fundo</button>
+                                                <span class="uib_shim"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal outer-element uib_w_41 ppp" data-uib="twitter%20bootstrap/modal" data-ver="1" data-backdrop="false" data-keyboard="true" id="pop-up-sair8">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button class="close" data-dismiss="modal">x</button>
+                            <h4 class="modal-title">Deseja sair da aplicação?</h4>
+                        </div>
+
+                        <div class="modal-body">
+
+                            <div class="btn-group uib-bs-flex widget uib_w_42" data-uib="twitter%20bootstrap/button_group" data-ver="1">
+                                <button class="btn widget uib_w_43 marginbotao btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn-sair-sim8">SIM</button>
+                                <button class="btn widget uib_w_45 btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn-sair-nao8">NÃO</button>
+                            </div>
+
+                            <div class="col uib_col_1 single-col nn ppp" data-uib="layout/col" data-ver="0">
+                                <div class="widget-container content-area vertical-col center"><span class="uib_shim"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="upage hidden background" id="menu-sis-6x0">
+            <div class="upage-outer">
+
+                <div class="uib-header header-bg container-group inner-element uib_w_40 h shadow" data-uib="layout/header" data-ver="0">
+                    <h2>SISTEMA 6X0</h2>
+                    <div class="widget-container wrapping-col single-centered"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col left">
+                        <button class="btn widget uib_w_58 d-margins btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="menusb5"><i class="el el-align-justify" data-position="icon only"></i>
+                        </button>
+                    </div>
+                    <div class="widget-container content-area horiz-area wrapping-col right">
+                        <button class="btn widget uib_w_58 d-margins btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn-sair-6x0"><i class="glyphicon glyphicon-remove" data-position="icon only"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="upage-content ac0 content-area vertical-col left" id="sis-6x0-passe">
+
+                </div>
+                <div class="uib-footer uib-footer-fixed footer-bg container-group inner-element uib_w_12" data-uib="layout/footer" data-ver="0">
+                    <h2></h2>
+                    <div class="widget-container wrapping-col single-centered">
+                        <div class="btn-group uib-bs-flex widget uib_w_46 d-margins" data-uib="twitter%20bootstrap/button_group" data-ver="1">
+                            <button class="btn widget uib_w_48 btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn-home-6x0"><i class="glyphicon glyphicon-home" data-position="icon only"></i>
+                            </button>
+                            <button class="btn widget uib_w_49 btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn-voltar-6x0"><i class="el el-return-key" data-position="icon only"></i>
+                            </button>
+                        </div>
+
+                    </div>
+                    <div class="widget-container content-area horiz-area wrapping-col left"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col right"></div>
+                </div>
+
+                <div class="inner-element uib_w_50 uib_sidebar leftbar bar-bg thumb-bg bar-gutter" data-uib="layout/left_sidebar" data-ver="1" data-anim="{'style':'overlap', 'v':200, 'side':'left', 'dur':200}" id="sd5">
+                    <div class="sidebar-content content-area vertical-col">
+                        <button class="widget uib_w_59 btn btn-sm btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="bt-6x0-recolhersd5"><i class="glyphicon glyphicon-arrow-left" data-position="icon only"></i>
+                        </button>
+
+                        <div class="panel-group no_wrap widget uib_w_51 acordeon" data-uib="twitter%20bootstrap/accordion" data-ver="1" id="bs-accordion-1">
+
+                            <div class="panel widget uib_w_52 acord panel-success" data-uib="twitter%20bootstrap/collapsible" data-ver="1">
+
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"><a class="accordion-toggle" data-toggle="collapse" href="#bs-accordion-group-3" data-parent="#bs-accordion-1">PASSE</a></h4>
+                                </div>
+
+                                <div id="bs-accordion-group-3" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <div class="col uib_col_5 single-col" data-uib="layout/col" data-ver="0">
+                                            <div class="widget-container content-area vertical-col center">
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Rede de 3</button>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Rede de 2</button>
+                                                <span class="uib_shim"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel widget uib_w_53 panel-success" data-uib="twitter%20bootstrap/collapsible" data-ver="1">
+
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"><a class="accordion-toggle" data-toggle="collapse" href="#bs-accordion-group-4" data-parent="#bs-accordion-1">SAQUE</a></h4>
+                                </div>
+
+                                <div id="bs-accordion-group-4" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <div class="col uib_col_6 single-col" data-uib="layout/col" data-ver="0">
+                                            <div class="widget-container content-area vertical-col">
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Levantador</button>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Meio2</button>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Ponta3</button>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Oposto</button>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Meio3</button>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Ponta2</button>
+                                                <span class="uib_shim"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel widget uib_w_54 panel-success" data-uib="twitter%20bootstrap/collapsible" data-ver="1">
+
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"><a class="accordion-toggle" data-toggle="collapse" href="#bs-accordion-group-5" data-parent="#bs-accordion-1">DEFESA</a></h4>
+                                </div>
+
+                                <div id="bs-accordion-group-5" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <div class="col uib_col_7 single-col" data-uib="layout/col" data-ver="0">
+                                            <div class="widget-container content-area vertical-col">
+                                                <h3>Ataque: </h3>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Entrada</button>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Saída</button>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Saída-Fundo</button>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Meio</button>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Chutada-Meio</button>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Meio-Fundo</button>
+                                                <span class="uib_shim"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="panel widget uib_w_54 panel-success" data-uib="twitter%20bootstrap/collapsible" data-ver="1">
+
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"><a class="accordion-toggle" data-toggle="collapse" href="#bs-accordion-group-6" data-parent="#bs-accordion-1">COBERTURA</a></h4>
+                                </div>
+
+                                <div id="bs-accordion-group-6" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <div class="col uib_col_7 single-col" data-uib="layout/col" data-ver="0">
+                                            <div class="widget-container content-area vertical-col">
+                                                <h3>Ataque: </h3>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Entrada</button>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Saída</button>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Saída-Fundo</button>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Meio</button>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Chutada-Meio</button>
+                                                <button class="btn widget uib_w_55 acordeon btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1">Meio-Fundo</button>
+                                                <span class="uib_shim"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal outer-element uib_w_41 ppp" data-uib="twitter%20bootstrap/modal" data-ver="1" data-backdrop="false" data-keyboard="true" id="pop-up-sair6">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button class="close" data-dismiss="modal">x</button>
+                            <h4 class="modal-title">Deseja sair da aplicação?</h4>
+                        </div>
+
+                        <div class="modal-body">
+
+                            <div class="btn-group uib-bs-flex widget uib_w_42" data-uib="twitter%20bootstrap/button_group" data-ver="1">
+                                <button class="btn widget uib_w_43 marginbotao btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn-sair-sim6">SIM</button>
+                                <button class="btn widget uib_w_45 btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn-sair-nao6">NÃO</button>
+                            </div>
+
+                            <div class="col uib_col_1 single-col nn ppp" data-uib="layout/col" data-ver="0">
+                                <div class="widget-container content-area vertical-col center"><span class="uib_shim"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="upage vertical-col left hidden background" id="prancheta">
+            <div class="upage-outer">
+
+                <div class="uib-header header-bg container-group inner-element uib_w_40 h shadow" data-uib="layout/header" data-ver="0">
+                    <h2>PRANCHETA</h2>
+                    <div class="widget-container wrapping-col single-centered"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col left"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col right">
+                        <button class="btn widget uib_w_58 d-margins btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn-sair-pran"><i class="glyphicon glyphicon-remove" data-position="icon only"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="uib-footer uib-footer-fixed footer-bg container-group inner-element uib_w_12" data-uib="layout/footer" data-ver="0">
+                <h2></h2>
+                <div class="widget-container wrapping-col single-centered">
+                    <div class="btn-group uib-bs-flex widget uib_w_46 d-margins" data-uib="twitter%20bootstrap/button_group" data-ver="1">
+
+                        <button class="btn widget uib_w_48 btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn-home-pran"><i class="glyphicon glyphicon-home" data-position="icon only"></i>
+                        </button>
+
+                    </div>
+
+                </div>
+                <div class="widget-container content-area horiz-area wrapping-col left"></div>
+                <div class="widget-container content-area horiz-area wrapping-col right"></div>
+            </div>
+
+            <div class="modal outer-element uib_w_41 ppp" data-uib="twitter%20bootstrap/modal" data-ver="1" data-backdrop="false" data-keyboard="true" id="pop-up-sair7">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button class="close" data-dismiss="modal">x</button>
+                            <h4 class="modal-title">Deseja sair da aplicação?</h4>
+                        </div>
+
+                        <div class="modal-body">
+
+                            <div class="btn-group uib-bs-flex widget uib_w_42" data-uib="twitter%20bootstrap/button_group" data-ver="1">
+                                <button class="btn widget uib_w_43 marginbotao btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn-sair-sim7">SIM</button>
+                                <button class="btn widget uib_w_45 btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn-sair-nao7">NÃO</button>
+                            </div>
+
+                            <div class="col uib_col_1 single-col nn ppp" data-uib="layout/col" data-ver="0">
+                                <div class="widget-container content-area vertical-col center">
+
+                                    <span class="uib_shim"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="modal-footer"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="upage hidden background" id="menu-sis">
+
+            <div class="modal outer-element uib_w_41 ppp" data-uib="twitter%20bootstrap/modal" data-ver="1" data-backdrop="false" data-keyboard="true" id="pop-up-sair2">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button class="close" data-dismiss="modal">x</button>
+                            <h4 class="modal-title">Deseja sair da aplicação?</h4>
+                        </div>
+
+                        <div class="modal-body">
+
+                            <div class="btn-group uib-bs-flex widget uib_w_42" data-uib="twitter%20bootstrap/button_group" data-ver="1">
+                                <button class="btn widget uib_w_43 marginbotao btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn-sair-sim2">SIM</button>
+                                <button class="btn widget uib_w_45 btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn-sair-nao2">NÃO</button>
+                            </div>
+
+                            <div class="col uib_col_1 single-col nn ppp" data-uib="layout/col" data-ver="0">
+                                <div class="widget-container content-area vertical-col center"><span class="uib_shim"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="upage-outer">
+                <div class="uib-header header-bg container-group inner-element uib_w_40 h shadow" data-uib="layout/header" data-ver="0">
+                    <h2>MENU DE SISTEMAS</h2>
+                    <div class="widget-container wrapping-col single-centered"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col left"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col right">
+                        <button class="btn widget uib_w_58 d-margins btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn-sair-menusis"><i class="glyphicon glyphicon-remove" data-position="icon only"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="upage-content ac0 content-area vertical-col" id="page_91_19">
+                    <button class="btn widget uib_w_5 marginmenu-sis tambtnprancheta btn-lg btn-success" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn-sis6x0">SISTEMA 6 X 0</button>
+                    <button class="btn widget uib_w_6 marginmenu-sis tambtnprancheta txtbtnprancheta btn-lg btn-success" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn-sis3x3">SISTEMA 3 X 3</button>
+                    <button class="btn widget uib_w_7 d-margins marginmenu-sis tambtnprancheta btn-lg btn-success" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn-sis4x2s">SISTEMA 4 X 2 SIMPLES</button>
+                    <button class="btn widget uib_w_8 d-margins marginmenu-sis tambtnprancheta btn-lg btn-success" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn-sis4x4i">SISTEMA 4 X 2 INFILTRADO</button>
+                    <button class="btn widget uib_w_9 d-margins marginmenu-sis tambtnprancheta btn-lg btn-success" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn-sis5x1">SISTEMA 5 X 1</button>
+                </div>
+                <div class="uib-footer uib-footer-fixed footer-bg container-group inner-element uib_w_21" data-uib="layout/footer" data-ver="0">
+                    <h2></h2>
+                    <div class="widget-container wrapping-col single-centered">
+                        <div class="btn-group uib-bs-flex widget uib_w_22 d-margins" data-uib="twitter%20bootstrap/button_group" data-ver="1">
+
+                            <button class="btn widget uib_w_23 btn-lg btn-default" data-uib="twitter%20bootstrap/button" data-ver="1" id="btn-home-menu-sist"><i class="glyphicon glyphicon-home" data-position="icon only"></i>
+                            </button>
+
+                        </div>
+                    </div>
+                    <div class="widget-container content-area horiz-area wrapping-col left"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col right"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </body>
+
+</html>
