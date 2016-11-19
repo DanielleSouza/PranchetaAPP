@@ -679,6 +679,94 @@
          return false;
     });
     
+        /* button  #btn-sair-sim3 */
+    $(document).on("click", "#btn-sair-sim3", function(evt)
+    {
+         /* Other options: .modal("show")  .modal("hide")  .modal("toggle")
+         See full API here: http://getbootstrap.com/javascript/#modals 
+            */
+        
+         $("#pop-up-sair").modal("toggle");  
+         return false;
+    });
+    
+        /* button  #btn-sair-sim1 */
+    $(document).on("click", "#btn-sair-sim1", function(evt)
+    {
+         /* Other options: .modal("show")  .modal("hide")  .modal("toggle")
+         See full API here: http://getbootstrap.com/javascript/#modals 
+            */
+        
+         $("#pop-up-sair1").modal("toggle");  
+         return false;
+    });
+    
+        /* button  #btn-sair-sim4 */
+    $(document).on("click", "#btn-sair-sim4", function(evt)
+    {
+         /* Other options: .modal("show")  .modal("hide")  .modal("toggle")
+         See full API here: http://getbootstrap.com/javascript/#modals 
+            */
+        
+         $("#pop-up-sair4").modal("toggle");  
+         return false;
+    });
+    
+        /* button  #btn-sair-sim5 */
+    $(document).on("click", "#btn-sair-sim5", function(evt)
+    {
+         /* Other options: .modal("show")  .modal("hide")  .modal("toggle")
+         See full API here: http://getbootstrap.com/javascript/#modals 
+            */
+        
+         $("#pop-up-sair5").modal("toggle");  
+         return false;
+    });
+    
+        /* button  #btn-sair-sim8 */
+    $(document).on("click", "#btn-sair-sim8", function(evt)
+    {
+         /* Other options: .modal("show")  .modal("hide")  .modal("toggle")
+         See full API here: http://getbootstrap.com/javascript/#modals 
+            */
+        
+         $("#pop-up-sair8").modal("toggle");  
+         return false;
+    });
+    
+        /* button  #btn-sair-sim6 */
+    $(document).on("click", "#btn-sair-sim6", function(evt)
+    {
+         /* Other options: .modal("show")  .modal("hide")  .modal("toggle")
+         See full API here: http://getbootstrap.com/javascript/#modals 
+            */
+        
+         $("#pop-up-sair6").modal("toggle");  
+         return false;
+    });
+    
+        /* button  #btn-sair-sim7 */
+    $(document).on("click", "#btn-sair-sim7", function(evt)
+    {
+         /* Other options: .modal("show")  .modal("hide")  .modal("toggle")
+         See full API here: http://getbootstrap.com/javascript/#modals 
+            */
+        
+         $("#pop-up-sair7").modal("toggle");  
+         return false;
+    });
+    
+        /* button  #btn-sair-sim2 */
+    $(document).on("click", "#btn-sair-sim2", function(evt)
+    {
+         /* Other options: .modal("show")  .modal("hide")  .modal("toggle")
+         See full API here: http://getbootstrap.com/javascript/#modals 
+            */
+        
+         $("#pop-up-sair2").modal("toggle");  
+         return false;
+    });
+    
     }
  document.addEventListener("app.Ready", register_event_handlers, false);
 })();
