@@ -89,44 +89,19 @@
     });
     
         /* button  #btn-sis6x0 */
-    $(document).on("click", "#btn-sis6x0", function(evt)
-    {
-         /*global activate_page */
-         activate_page("#menu-sis-6x0"); 
-         return false;
-    });
+    
     
         /* button  #btn-sis3x3 */
-    $(document).on("click", "#btn-sis3x3", function(evt)
-    {
-         /*global activate_page */
-         activate_page("#menu-sis-3x3"); 
-         return false;
-    });
+    
     
         /* button  #btn-sis4x2s */
-    $(document).on("click", "#btn-sis4x2s", function(evt)
-    {
-         /*global activate_page */
-         activate_page("#menu-sis-4x2s"); 
-         return false;
-    });
+    
     
         /* button  #btn-sis4x4i */
-    $(document).on("click", "#btn-sis4x4i", function(evt)
-    {
-         /*global activate_page */
-         activate_page("#menu-sis-4x2i"); 
-         return false;
-    });
+    
     
         /* button  #btn-sis5x1 */
-    $(document).on("click", "#btn-sis5x1", function(evt)
-    {
-         /*global activate_page */
-         activate_page("#menu-sis-5x1"); 
-         return false;
-    });
+    
     
         /* button  #btn-home-menu-sis */
     $(document).on("click", "#btn-home-menu-sis", function(evt)
@@ -764,6 +739,46 @@
             */
         
          $("#pop-up-sair2").modal("toggle");  
+         return false;
+    });
+    
+        /* button  #btn-sis6x0 */
+    $(document).on("click", "#btn-sis6x0", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#sis-6x0"); 
+         return false;
+    });
+    
+        /* button  #btn-sis3x3 */
+    $(document).on("click", "#btn-sis3x3", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#sis-3x3"); 
+         return false;
+    });
+    
+        /* button  #btn-sis4x2s */
+    $(document).on("click", "#btn-sis4x2s", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#sis-4x2s"); 
+         return false;
+    });
+    
+        /* button  #btn-sis4x4i */
+    $(document).on("click", "#btn-sis4x4i", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#sis-4x2i"); 
+         return false;
+    });
+    
+        /* button  #btn-sis5x1 */
+    $(document).on("click", "#btn-sis5x1", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#sis-5x1"); 
          return false;
     });
     
