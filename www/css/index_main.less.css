@@ -392,7 +392,7 @@ body#afui .splt {
 }
 @media all {
   .footer-bg {
-    background-color: #666666;
+    background-color: #c0c0c0;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -490,19 +490,8 @@ body#afui .splt {
   }
 }
 @media all {
-  .wrapping-col > .marginmenu-sis,
-  .wrapping-col > .afScrollPanel > .marginmenu-sis {
-    margin-left: 6px;
-    margin-right: 6px;
-  }
-  .wrapping-col > .marginmenu-sis,
-  .wrapping-col > .afScrollPanel > .marginmenu-sis {
-    margin-left: 6px;
-    margin-right: 6px;
-  }
   .marginmenu-sis {
     margin-top: 90px;
-    margin-bottom: 0px;
   }
 }
 @media all {
@@ -537,10 +526,9 @@ body#afui .splt {
 }
 @media all {
   .tambtnprancheta {
-    height: 80px        !important;
-    /*width:100% !important;*/
-  
-    border-radius: %  100% 100% 100% !important;
+    height: 80px !important;
+    width: 99% !important;
+    border-radius: % !important;
     font-size: 40px;
     text-align: center;
   }
@@ -831,7 +819,7 @@ label:empty {
   
 }
 .btn {
-  btn-color: #ffff00;
+  btn-color: #000000;
 }
 @media all {
   .bar-bg {

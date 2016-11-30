@@ -782,6 +782,109 @@
          return false;
     });
     
+        /* button  #btn-voltar-6x3 */
+    
+    
+        /* button  #bt-6x3-recolhersd4 */
+    $(document).on("click", "#bt-6x3-recolhersd4", function(evt)
+    {
+         /*global uib_sb */
+         /* Other possible functions are: 
+           uib_sb.open_sidebar($sb)
+           uib_sb.close_sidebar($sb)
+           uib_sb.toggle_sidebar($sb)
+            uib_sb.close_all_sidebars()
+          See js/sidebar.js for the full sidebar API */
+        
+         uib_sb.toggle_sidebar($("#sd4"));  
+         return false;
+    });
+    
+        /* button  #btn-voltar-6x3 */
+    $(document).on("click", "#btn-voltar-6x3", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#menu-sis"); 
+         return false;
+    });
+    
+        /* button  #btn-home-6x3 */
+    $(document).on("click", "#btn-home-6x3", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#home"); 
+         return false;
+    });
+    
+        /* button  #bt-6x6-recolhersd5 */
+    $(document).on("click", "#bt-6x6-recolhersd5", function(evt)
+    {
+         /*global uib_sb */
+         /* Other possible functions are: 
+           uib_sb.open_sidebar($sb)
+           uib_sb.close_sidebar($sb)
+           uib_sb.toggle_sidebar($sb)
+            uib_sb.close_all_sidebars()
+          See js/sidebar.js for the full sidebar API */
+        
+         uib_sb.toggle_sidebar($("#sd5"));  
+         return false;
+    });
+    
+        /* button  #btn-voltar-6x6 */
+    $(document).on("click", "#btn-voltar-6x6", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#menu-sis"); 
+         return false;
+    });
+    
+        /* button  #btn-home-6x6 */
+    $(document).on("click", "#btn-home-6x6", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#home"); 
+         return false;
+    });
+    
+        /* button  #btn-sis6x3 */
+    $(document).on("click", "#btn-sis6x3", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#sis-6x3"); 
+         return false;
+    });
+    
+        /* button  #btn-sis6x6 */
+    $(document).on("click", "#btn-sis6x6", function(evt)
+    {
+         /*global activate_page */
+         activate_page("#sis-6x6"); 
+         return false;
+    });
+    
+        /* button  #btn-sair-6x3 */
+    $(document).on("click", "#btn-sair-6x3", function(evt)
+    {
+         /* Other options: .modal("show")  .modal("hide")  .modal("toggle")
+         See full API here: http://getbootstrap.com/javascript/#modals 
+            */
+        
+         $("#pop-up-sair8").modal("toggle");  
+         return false;
+    });
+    
+        /* button  #btn-sair-6x6 */
+    $(document).on("click", "#btn-sair-6x6", function(evt)
+    {
+         /* Other options: .modal("show")  .modal("hide")  .modal("toggle")
+         See full API here: http://getbootstrap.com/javascript/#modals 
+            */
+        
+         $("#pop-up-sair6").modal("toggle");  
+         return false;
+    });
+    
     }
  document.addEventListener("app.Ready", register_event_handlers, false);
 })();
